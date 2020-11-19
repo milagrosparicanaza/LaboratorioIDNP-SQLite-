@@ -1,49 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/fondo"
     tools:context=".MainActivity">
 
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
         android:src="@drawable/usuario1"
         />
 
     <EditText
         android:id="@+id/TextV_usu"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
         android:hint="Usuario"
-        android:inputType="text"
+        android:inputType="textEmailAddress"
         />
 
     <EditText
         android:id="@+id/TextV_pass"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
         android:hint="Password"
-        android:inputType="numberPassword"
+        android:inputType="textPassword"
         />
     <Button
         android:id="@+id/Btn_iniciar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:background="#FF0000"
         android:text="Iniciar"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textStyle="bold"
         android:layout_gravity= "center"
         />
-    <TextView
-        android:id="@+id/tv_registar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button
+        android:id="@+id/Btn_registar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#0000ff"
         android:text="Registrar"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textStyle="bold"
         android:layout_gravity="center"
-        android:textSize="25sp"
+        android:layout_margin="20dp"
         />
 
 </LinearLayout>
